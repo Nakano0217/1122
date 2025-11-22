@@ -1,0 +1,14 @@
+/* Simple Boogie-Board-like styles: black canvas, top-right controls */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:#000;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,sans-serif}
+canvas#board{display:block;width:100vw;height:100vh;touch-action:none;cursor:crosshair}
+.controls{position:fixed;top:12px;right:12px;display:flex;gap:8px;align-items:center;z-index:20}
+.tool{background:#222;color:#fff;border:1px solid #444;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:15px;display:inline-flex;align-items:center;justify-content:center;min-width:84px;height:40px}
+.tool.active{background:#222;color:#fff;border:1px solid #444;padding:8px 10px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;min-width:84px;height:40px}
+.clear{background:#b22222;color:#fff;border:none;padding:8px 10px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;min-width:84px;height:40px}
+.size{display:flex;flex-direction:column;align-items:center;color:#ddd;font-size:12px}
+.size input{width:120px}
+
+@media (prefers-reduced-motion: reduce){
+  .tool,.clear{transition:none}
+}

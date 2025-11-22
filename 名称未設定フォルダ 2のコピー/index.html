@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boogie Board — 白文字 on 黒</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="board" aria-label="drawing board"></canvas>
+
+  <div class="controls" role="toolbar" aria-label="tools">
+  <button id="toolToggle" class="tool" title="ペン" aria-pressed="true">ペン</button>
+    <button id="clearBtn" class="clear" title="Clear all">全削除</button>
+    <div class="size">
+      <label for="size">太さ</label>
+      <input id="size" type="range" min="1" max="60" value="8" aria-label="Brush size">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
